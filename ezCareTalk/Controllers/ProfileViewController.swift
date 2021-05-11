@@ -8,6 +8,9 @@
 
 import UIKit
 import FirebaseAuth
+import FBSDKLoginKit
+import GoogleSignIn
+
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
                     return data.count
@@ -49,6 +52,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     return
                 }
                 
+                // Log out facebook
+                FBSDKLoginKit.LoginManager().logOut()
+                
+                // Log out google
+                GIDSignIn.sharedInstance()?.signOut()
+
                 do {
                     try FirebaseAuth.Auth.auth().signOut()
                     

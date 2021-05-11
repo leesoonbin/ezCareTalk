@@ -186,6 +186,7 @@
 				04E04E242646ADCF002D03C1 /* Frameworks */,
 				04E04E252646ADCF002D03C1 /* Resources */,
 				36F898E8C813B151C041E65E /* [CP] Embed Pods Frameworks */,
+				2C0346CC799FFAE8DD03E440 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +245,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C0346CC799FFAE8DD03E440 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezCareTalk/Pods-ezCareTalk-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezCareTalk/Pods-ezCareTalk-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ezCareTalk/Pods-ezCareTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		36F898E8C813B151C041E65E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
