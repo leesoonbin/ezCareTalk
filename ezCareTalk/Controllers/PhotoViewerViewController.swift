@@ -9,6 +9,7 @@
 import UIKit
 
 class PhotoViewerViewController: UIViewController {
+    var TEST:Bool
 
     override func viewDidLoad() {
         super.viewDidLoad()
